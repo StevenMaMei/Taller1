@@ -40,7 +40,18 @@ namespace Taller1
             controlInformacion1.setCodigo(info[1]);
             controlInformacion1.setNombre(info[2]);
             controlInformacion1.setPlaca(info[3]);
-            controlInformacion1.setHorario(info[4], info[4].Substring(info[4].Length - 2));
+            controlInformacion1.setHorarioL(info[4], info[4].Substring(info[4].Length - 2));
+            controlInformacion1.setHorarioSL(info[5], info[5].Substring(info[5].Length - 2));
+            controlInformacion1.setHorarioMa(info[6], info[6].Substring(info[6].Length - 2));
+            controlInformacion1.setHorarioSMa(info[7], info[7].Substring(info[7].Length - 2));
+            controlInformacion1.setHorarioMi(info[8], info[8].Substring(info[8].Length - 2));
+            controlInformacion1.setHorarioSMi(info[9], info[9].Substring(info[9].Length - 2));
+            controlInformacion1.setHorarioJ(info[10], info[10].Substring(info[10].Length - 2));
+            controlInformacion1.setHorarioSJ(info[11], info[11].Substring(info[11].Length - 2));
+            controlInformacion1.setHorarioV(info[12], info[12].Substring(info[12].Length - 2));
+            controlInformacion1.setHorarioSV(info[13], info[13].Substring(info[13].Length - 2));
+
+
         }
         public void usuariosRegistrados()
         {

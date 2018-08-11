@@ -31,7 +31,7 @@ namespace Modelo
 
         public override string ToString()
         {
-            return cedula + "," + codigo + "," + nombre + "," + placa + "," + horario + ",";
+            return cedula + "," + codigo + "," + nombre + "," + placa + "," + horario;
         }
     }
 }

@@ -63,7 +63,8 @@ namespace Modelo
                 for (int i = 0; i < lines.Length; i++)
                 {
                     String[] form = lines[i].Split(',');
-                    Formulario agregar = new Formulario(Int32.Parse(form[0]), form[1], form[2], form[3], form[4]);
+                    String horario = form[4]+ ","+ form[5]+ "," + form[6]+ "," + form[7]+ "," + form[8]+ "," + form[9]+ "," + form[10]+ "," + form[11]+ "," + form[12]+ "," + form[13];
+                    Formulario agregar = new Formulario(Int32.Parse(form[0]), form[1], form[2], form[3], horario);
                     baseDatos.Add(agregar);
                 }
             }catch(Exception e)
