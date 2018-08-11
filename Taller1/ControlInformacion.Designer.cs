@@ -37,7 +37,8 @@
             this.txtPlaca = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtCodigo = new System.Windows.Forms.TextBox();
-            this.txtHorario = new System.Windows.Forms.TextBox();
+            this.comboHora = new System.Windows.Forms.ComboBox();
+            this.comboMinuto = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -62,7 +63,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(114, 128);
+            this.label3.Location = new System.Drawing.Point(114, 135);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(44, 13);
             this.label3.TabIndex = 2;
@@ -80,7 +81,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(114, 272);
+            this.label5.Location = new System.Drawing.Point(117, 255);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(41, 13);
             this.label5.TabIndex = 4;
@@ -96,14 +97,14 @@
             // 
             // txtPlaca
             // 
-            this.txtPlaca.Location = new System.Drawing.Point(195, 194);
+            this.txtPlaca.Location = new System.Drawing.Point(195, 191);
             this.txtPlaca.Name = "txtPlaca";
             this.txtPlaca.Size = new System.Drawing.Size(100, 20);
             this.txtPlaca.TabIndex = 4;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(195, 128);
+            this.txtNombre.Location = new System.Drawing.Point(195, 132);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(100, 20);
             this.txtNombre.TabIndex = 3;
@@ -116,18 +117,71 @@
             this.txtCodigo.TabIndex = 2;
             this.txtCodigo.TextChanged += new System.EventHandler(this.txtCodigo_TextChanged);
             // 
-            // txtHorario
+            // comboHora
             // 
-            this.txtHorario.Location = new System.Drawing.Point(195, 269);
-            this.txtHorario.Name = "txtHorario";
-            this.txtHorario.Size = new System.Drawing.Size(100, 20);
-            this.txtHorario.TabIndex = 5;
+            this.comboHora.FormattingEnabled = true;
+            this.comboHora.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"});
+            this.comboHora.Location = new System.Drawing.Point(195, 252);
+            this.comboHora.Name = "comboHora";
+            this.comboHora.Size = new System.Drawing.Size(43, 21);
+            this.comboHora.TabIndex = 5;
+            this.comboHora.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // comboMinuto
+            // 
+            this.comboMinuto.FormattingEnabled = true;
+            this.comboMinuto.Items.AddRange(new object[] {
+            "00",
+            "05",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55"});
+            this.comboMinuto.Location = new System.Drawing.Point(252, 252);
+            this.comboMinuto.Name = "comboMinuto";
+            this.comboMinuto.Size = new System.Drawing.Size(43, 21);
+            this.comboMinuto.TabIndex = 7;
             // 
             // ControlInformacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.txtHorario);
+            this.Controls.Add(this.comboMinuto);
+            this.Controls.Add(this.comboHora);
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtPlaca);
@@ -155,6 +209,7 @@
         private System.Windows.Forms.TextBox txtPlaca;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtCodigo;
-        private System.Windows.Forms.TextBox txtHorario;
+        private System.Windows.Forms.ComboBox comboHora;
+        private System.Windows.Forms.ComboBox comboMinuto;
     }
 }

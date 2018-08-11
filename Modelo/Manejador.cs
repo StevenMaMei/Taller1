@@ -38,10 +38,12 @@ namespace Modelo
 
         public void guardarFormularios()
         {
+            String formularios = "";
             for(int i = 0; i < baseDatos.Count; i++)
             {
-                System.IO.File.WriteAllText(@".\guardar.txt",baseDatos[i].ToString()+"\n");
+                formularios += baseDatos[i].ToString() + "\n";
             }
+                System.IO.File.WriteAllText(@".\guardar.txt",formularios);
         }
 
         public string buscarFormulario(string cod)

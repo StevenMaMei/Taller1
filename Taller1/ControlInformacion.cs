@@ -54,7 +54,7 @@ namespace Taller1
         }
         public String darHorario()
         {
-            return txtHorario.Text;
+            return comboHora.Text + ":"+ comboMinuto.Text;
         }
 
         public void setCedula(String a)
@@ -73,9 +73,18 @@ namespace Taller1
         {
             txtPlaca.Text = a;
         }
-        public void setHorario(String a)
+        public void setHorario(String a, String b)
         {
-            txtHorario.Text = a;
+            if (a.Substring(1, 2).Equals(":"))
+            comboHora.Text = a.Substring(0,1);
+            else
+                comboHora.Text = a.Substring(0, 2);
+            comboMinuto.Text = b;
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -40,7 +40,7 @@ namespace Taller1
             controlInformacion1.setCodigo(info[1]);
             controlInformacion1.setNombre(info[2]);
             controlInformacion1.setPlaca(info[3]);
-            controlInformacion1.setHorario(info[4]);
+            controlInformacion1.setHorario(info[4], info[4].Substring(info[4].Length - 2));
         }
         public void usuariosRegistrados()
         {
