@@ -30,17 +30,17 @@ namespace Taller1
         public void crearFormulario()
         {
   
-           modelo.crearNuevoFormulario(Int32.Parse(controlInformacion2.darCedula()), controlInformacion2.darCodigo(), controlInformacion2.darNombre(), controlInformacion2.darPlaca(), controlInformacion2.darHorario());
+           modelo.crearNuevoFormulario(Int32.Parse(controlInformacion1.darCedula()), controlInformacion1.darCodigo(), controlInformacion1.darNombre(), controlInformacion1.darPlaca(), controlInformacion1.darHorario());
         }
 
         public void buscarUsuario(String n)
         {
             String[] info = modelo.buscarFormulario(n).Split(',');
-            controlInformacion2.setCedula(info[0]);
-            controlInformacion2.setCodigo(info[1]);
-            controlInformacion2.setNombre(info[2]);
-            controlInformacion2.setPlaca(info[3]);
-            controlInformacion2.setHorario(info[4]);
+            controlInformacion1.setCedula(info[0]);
+            controlInformacion1.setCodigo(info[1]);
+            controlInformacion1.setNombre(info[2]);
+            controlInformacion1.setPlaca(info[3]);
+            controlInformacion1.setHorario(info[4]);
         }
         public void usuariosRegistrados()
         {
@@ -51,5 +51,9 @@ namespace Taller1
             modelo.guardarFormularios();
         }
 
+        private void controlInformacion1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
