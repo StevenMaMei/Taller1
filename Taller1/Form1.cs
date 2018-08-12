@@ -29,7 +29,8 @@ namespace Taller1
 
         public void crearFormulario()
         {
-  
+            if (controlInformacion1.darCodigo().Equals("") || controlInformacion1.darNombre().Equals("") || controlInformacion1.darPlaca().Equals(""))
+                 throw new Exception("Campos inválidos, por favor verifique los datos escritos");
            modelo.crearNuevoFormulario(Int32.Parse(controlInformacion1.darCedula()), controlInformacion1.darCodigo(), controlInformacion1.darNombre(), controlInformacion1.darPlaca(), controlInformacion1.darHorario());
         }
 

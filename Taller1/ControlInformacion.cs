@@ -64,7 +64,7 @@ namespace Taller1
             horario += comboHoraEJ.Text + ":" + comboMinutoEJ.Text + ",";
             horario += comboHoraSJ.Text + ":" + comboMinutoSJ.Text + ",";
             horario += comboHoraEV.Text + ":" + comboMinutoEV.Text + ",";
-            horario += comboHoraSV.Text + ":" + comboMinutoSV.Text + ",";
+            horario += comboHoraSV.Text + ":" + comboMinutoSV.Text;
             return horario;
         }
 
@@ -182,6 +182,11 @@ namespace Taller1
         }
 
         private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboMinutoEL_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

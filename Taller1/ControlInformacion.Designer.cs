@@ -188,6 +188,7 @@
             this.comboHoraEL.Name = "comboHoraEL";
             this.comboHoraEL.Size = new System.Drawing.Size(43, 21);
             this.comboHoraEL.TabIndex = 5;
+            this.comboHoraEL.Text = "0";
             this.comboHoraEL.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // comboMinutoEL
@@ -210,6 +211,8 @@
             this.comboMinutoEL.Name = "comboMinutoEL";
             this.comboMinutoEL.Size = new System.Drawing.Size(43, 21);
             this.comboMinutoEL.TabIndex = 7;
+            this.comboMinutoEL.Text = "00";
+            this.comboMinutoEL.SelectedIndexChanged += new System.EventHandler(this.comboMinutoEL_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -262,6 +265,7 @@
             this.comboHoraSL.Name = "comboHoraSL";
             this.comboHoraSL.Size = new System.Drawing.Size(43, 21);
             this.comboHoraSL.TabIndex = 10;
+            this.comboHoraSL.Text = "0";
             // 
             // comboMinutoSL
             // 
@@ -283,6 +287,7 @@
             this.comboMinutoSL.Name = "comboMinutoSL";
             this.comboMinutoSL.Size = new System.Drawing.Size(43, 21);
             this.comboMinutoSL.TabIndex = 11;
+            this.comboMinutoSL.Text = "00";
             // 
             // comboHoraEMa
             // 
@@ -316,6 +321,7 @@
             this.comboHoraEMa.Name = "comboHoraEMa";
             this.comboHoraEMa.Size = new System.Drawing.Size(43, 21);
             this.comboHoraEMa.TabIndex = 12;
+            this.comboHoraEMa.Text = "0";
             // 
             // comboMinutoEMa
             // 
@@ -337,6 +343,7 @@
             this.comboMinutoEMa.Name = "comboMinutoEMa";
             this.comboMinutoEMa.Size = new System.Drawing.Size(43, 21);
             this.comboMinutoEMa.TabIndex = 13;
+            this.comboMinutoEMa.Text = "00";
             // 
             // comboHoraSMa
             // 
@@ -370,6 +377,7 @@
             this.comboHoraSMa.Name = "comboHoraSMa";
             this.comboHoraSMa.Size = new System.Drawing.Size(43, 21);
             this.comboHoraSMa.TabIndex = 14;
+            this.comboHoraSMa.Text = "0";
             // 
             // comboMinutoSMa
             // 
@@ -391,6 +399,7 @@
             this.comboMinutoSMa.Name = "comboMinutoSMa";
             this.comboMinutoSMa.Size = new System.Drawing.Size(43, 21);
             this.comboMinutoSMa.TabIndex = 15;
+            this.comboMinutoSMa.Text = "00";
             // 
             // label8
             // 
@@ -434,6 +443,7 @@
             this.comboHoraEMi.Name = "comboHoraEMi";
             this.comboHoraEMi.Size = new System.Drawing.Size(43, 21);
             this.comboHoraEMi.TabIndex = 17;
+            this.comboHoraEMi.Text = "0";
             // 
             // comboMinutoEMi
             // 
@@ -455,6 +465,7 @@
             this.comboMinutoEMi.Name = "comboMinutoEMi";
             this.comboMinutoEMi.Size = new System.Drawing.Size(43, 21);
             this.comboMinutoEMi.TabIndex = 18;
+            this.comboMinutoEMi.Text = "00";
             // 
             // comboHoraSMi
             // 
@@ -488,6 +499,7 @@
             this.comboHoraSMi.Name = "comboHoraSMi";
             this.comboHoraSMi.Size = new System.Drawing.Size(43, 21);
             this.comboHoraSMi.TabIndex = 19;
+            this.comboHoraSMi.Text = "0";
             // 
             // comboHoraEJ
             // 
@@ -521,6 +533,7 @@
             this.comboHoraEJ.Name = "comboHoraEJ";
             this.comboHoraEJ.Size = new System.Drawing.Size(43, 21);
             this.comboHoraEJ.TabIndex = 21;
+            this.comboHoraEJ.Text = "0";
             // 
             // label9
             // 
@@ -563,6 +576,7 @@
             this.comboHoraSJ.Name = "comboHoraSJ";
             this.comboHoraSJ.Size = new System.Drawing.Size(43, 21);
             this.comboHoraSJ.TabIndex = 24;
+            this.comboHoraSJ.Text = "0";
             // 
             // comboHoraEV
             // 
@@ -596,6 +610,7 @@
             this.comboHoraEV.Name = "comboHoraEV";
             this.comboHoraEV.Size = new System.Drawing.Size(43, 21);
             this.comboHoraEV.TabIndex = 26;
+            this.comboHoraEV.Text = "0";
             // 
             // comboHoraSV
             // 
@@ -629,6 +644,7 @@
             this.comboHoraSV.Name = "comboHoraSV";
             this.comboHoraSV.Size = new System.Drawing.Size(43, 21);
             this.comboHoraSV.TabIndex = 28;
+            this.comboHoraSV.Text = "0";
             // 
             // label10
             // 
@@ -659,6 +675,7 @@
             this.comboMinutoSMi.Name = "comboMinutoSMi";
             this.comboMinutoSMi.Size = new System.Drawing.Size(43, 21);
             this.comboMinutoSMi.TabIndex = 31;
+            this.comboMinutoSMi.Text = "00";
             // 
             // comboMinutoEJ
             // 
@@ -680,6 +697,7 @@
             this.comboMinutoEJ.Name = "comboMinutoEJ";
             this.comboMinutoEJ.Size = new System.Drawing.Size(43, 21);
             this.comboMinutoEJ.TabIndex = 32;
+            this.comboMinutoEJ.Text = "00";
             // 
             // comboMinutoSJ
             // 
@@ -701,6 +719,7 @@
             this.comboMinutoSJ.Name = "comboMinutoSJ";
             this.comboMinutoSJ.Size = new System.Drawing.Size(43, 21);
             this.comboMinutoSJ.TabIndex = 33;
+            this.comboMinutoSJ.Text = "00";
             // 
             // comboMinutoEV
             // 
@@ -722,6 +741,7 @@
             this.comboMinutoEV.Name = "comboMinutoEV";
             this.comboMinutoEV.Size = new System.Drawing.Size(43, 21);
             this.comboMinutoEV.TabIndex = 34;
+            this.comboMinutoEV.Text = "00";
             // 
             // comboMinutoSV
             // 
@@ -743,6 +763,7 @@
             this.comboMinutoSV.Name = "comboMinutoSV";
             this.comboMinutoSV.Size = new System.Drawing.Size(43, 21);
             this.comboMinutoSV.TabIndex = 35;
+            this.comboMinutoSV.Text = "00";
             // 
             // label11
             // 
