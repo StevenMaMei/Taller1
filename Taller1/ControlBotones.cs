@@ -47,7 +47,7 @@ namespace Taller1
             }catch(Exception a)
             {
 
-                MessageBox.Show("Usuario no encontrado" + a.StackTrace);
+                MessageBox.Show("Usuario no encontrado");
             }
         }
 

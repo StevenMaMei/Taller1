@@ -42,7 +42,7 @@ namespace Modelo
             Formulario f1 = baseDatos.Find(x => x.Codigo.Equals(codigo));
             if(f1 == null)
             {
-                retorno = "Usuario con el código"+codigo+ "no encontrado";
+                retorno = "Usuario con el código "+codigo+ " no encontrado";
             }
             else
             {
