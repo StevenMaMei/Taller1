@@ -60,5 +60,10 @@ namespace Taller1
         {
 
         }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            principal.actualizarInformacion();
+        }
     }
 }

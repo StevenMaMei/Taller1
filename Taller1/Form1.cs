@@ -54,6 +54,18 @@ namespace Taller1
 
 
         }
+
+        public void actualizarInformacion()
+        {
+            try
+            {
+            String men=modelo.actualizarFormulario(Int32.Parse(controlInformacion1.darCedula()), controlInformacion1.darCodigo(), controlInformacion1.darNombre(), controlInformacion1.darPlaca(), controlInformacion1.darHorario());
+                MessageBox.Show(men);
+            }catch(Exception e)
+            {
+                MessageBox.Show("Campos inválidos, por favor verifique los datos escritos");
+            }
+        }
         public void usuariosRegistrados()
         {
             MessageBox.Show("Hay " + modelo.cuantosRegistrados() + " usuarios registrados");

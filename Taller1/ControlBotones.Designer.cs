@@ -33,13 +33,15 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnActualizar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(73, 18);
+            this.button1.Location = new System.Drawing.Point(73, 0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(153, 22);
+            this.button1.Size = new System.Drawing.Size(153, 20);
             this.button1.TabIndex = 0;
             this.button1.Text = "Salvar Formulario";
             this.button1.UseVisualStyleBackColor = true;
@@ -47,7 +49,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(73, 70);
+            this.button2.Location = new System.Drawing.Point(73, 100);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(153, 21);
             this.button2.TabIndex = 1;
@@ -57,7 +59,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(73, 207);
+            this.button3.Location = new System.Drawing.Point(73, 241);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(153, 22);
             this.button3.TabIndex = 2;
@@ -67,7 +69,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(73, 123);
+            this.button4.Location = new System.Drawing.Point(73, 154);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(153, 23);
             this.button4.TabIndex = 3;
@@ -77,15 +79,36 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(73, 164);
+            this.textBox1.Location = new System.Drawing.Point(73, 206);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(153, 20);
             this.textBox1.TabIndex = 4;
+            // 
+            // btnActualizar
+            // 
+            this.btnActualizar.Location = new System.Drawing.Point(73, 50);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(153, 23);
+            this.btnActualizar.TabIndex = 5;
+            this.btnActualizar.Text = "Actualizar formulario";
+            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(70, 190);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(95, 13);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Código estudiante:";
             // 
             // ControlBotones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -106,5 +129,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnActualizar;
+        private System.Windows.Forms.Label label1;
     }
 }

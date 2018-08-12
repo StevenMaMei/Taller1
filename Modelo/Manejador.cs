@@ -36,6 +36,27 @@ namespace Modelo
             }
         }
 
+        public String actualizarFormulario(int cedula, string codigo, string nombre, string placa, string horario)
+        {
+            String retorno = "";
+            Formulario f1 = baseDatos.Find(x => x.Codigo.Equals(codigo));
+            if(f1 == null)
+            {
+                retorno = "Usuario con el código"+codigo+ "no encontrado";
+            }
+            else
+            {
+                f1.Cedula = cedula;
+                f1.Codigo = codigo;
+                f1.Nombre = nombre;
+                f1.Placa = placa;
+                f1.Horario = horario;
+                guardarFormularios();
+                retorno = "Usuario con el código " + codigo + " modificado";
+            }
+            return retorno;
+        }
+
         public void guardarFormularios()
         {
             String formularios = "";
