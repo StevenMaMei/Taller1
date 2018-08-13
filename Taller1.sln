@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vista", "Taller1\Vista.cspr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelo", "Modelo\Modelo.csproj", "{4632683D-4A3D-4AC8-831A-69DD63D2608A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentos", "Documentos", "{34B48F6E-5073-425B-8C03-84E8FBFDE3FD}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\Informe Taller 2.pdf = ..\..\Informe Taller 2.pdf
+		..\..\Taller 2.pptx = ..\..\Taller 2.pptx
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
