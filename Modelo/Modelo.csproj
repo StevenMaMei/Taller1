@@ -48,6 +48,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="docs\Informe Taller 2.pdf" />
+    <None Include="docs\Taller 2.pptx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
